@@ -5,32 +5,32 @@ import java.io.IOException;
 
 /*
 * Author : isabella
-* Date : Jun. 9, 2021
+* Date : Jun. 11, 2021
 * Description :
 */
 
-public class Exemple2 {
-	
+public class Exercice1 {
+
+
 	public static void main(String[] args) throws IOException, FileNotFoundException
 	{
 		FileReader ficALire;
 		BufferedReader entree;
-		char c;
+		int c;
 		
-		ficALire=new FileReader("monFichier.txt");
+		ficALire=new FileReader("/Users/isabella/desktop/monFichier.txt");
 		entree = new BufferedReader(ficALire);
-		c= (char)entree.read();
-		System.out.print(c);
-		c= (char)entree.read();
-		System.out.print(c);
-		c= (char)entree.read();
-		System.out.print(c);
-		entree.close();
-		ficALire.close();
-
+		c= entree.read(); // Lecture du premier caractère
 		
-		
-		
+		while(c != -1 ) 
+		{
+			
+			c=entree.read();
+			if (){
+				
+				
+			}
+		}
 	}
 
 }
