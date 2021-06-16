@@ -17,19 +17,25 @@ public class Exercice1 {
 		FileReader ficALire;
 		BufferedReader entree;
 		int c;
+		int count = 0;
 		
 		ficALire=new FileReader("/Users/isabella/desktop/monFichier.txt");
 		entree = new BufferedReader(ficALire);
 		c= entree.read(); // Lecture du premier caractère
-		
-		while(c != -1 ) 
+
+		while(entree.ready()) 
 		{
 			
-			c=entree.read();
-			if (){
-				
-				
+			c=(char) entree.read();
+			
+			
+			if (c=='a'){
+				count++;
 			}
+			
+			System.out.println("Il y a " + count + "carateres dans le texte");
+			entree.close();
+			
 		}
 	}
 
