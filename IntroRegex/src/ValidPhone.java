@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class ValidPhone {
 
 	public static void main(String[] args) 
-	{
+	{ 
 		Scanner crayon = new Scanner(System.in);
 		
 		//System.out.println("Inscrire le numéro de télephone au format 123-345-7890");
