@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class RegExp1 {
 
 	public static void main(String[] args) 
-	{ 
+	{     
 		       
 		Scanner crayon = new Scanner(System.in);
 		
