@@ -19,6 +19,7 @@ public class Exercice1 {
 		int c;
 		int count = 0;
 		
+		try {
 		ficALire=new FileReader("/Users/isabella/desktop/monFichier.txt");
 		entree = new BufferedReader(ficALire);
 		c= entree.read(); // Lecture du premier caractère
@@ -32,11 +33,20 @@ public class Exercice1 {
 			if (c=='a'){
 				count++;
 			}
+		}
 			
 			System.out.println("Il y a " + count + "carateres dans le texte");
-			entree.close();
+			entree.close(); 
 			
+			
+		} catch(FileNotFoundException fnf) {
+			System.out.println("Le fichier ne peut pas etre lu");
+			
+		} catch (IOException ioe) {
+			System.out.println("Erreur entrée");
+			 
+		 }
 		}
-	}
+	
 
 }
